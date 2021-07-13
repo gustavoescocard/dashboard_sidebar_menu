@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <div class="logo_name">WebsiteLogo</div>
+            </div>
+            <i class='bx bx-menu' id='btn'></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">
+                    <i class='bx bxl-html5'></i>
+                    <span class="links_name">Html 5</span>
+                </a>
+                <span class="tooltip">Html 5</span>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">
+                    <i class='bx bxl-css3' ></i>
+                    <span class="links_name">CSS 3</span>
+                </a>
+                <span class="tooltip">CSS 3</span>
+            </li>
+            <li>
+                <a href="https://github.com/gustavoescocard" target="_blank">
+                    <i class='bx bxl-github' ></i>
+                    <span class="links_name">Github</span>
+                </a>
+                <span class="tooltip">Github</span>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/gustavo-escocard" target="_blank">
+                    <i class='bx bxl-linkedin' ></i>
+                    <span class="links_name">LinkedIn</span>
+                </a>
+                <span class="tooltip">LinkedIn</span>
+            </li>
+            <li>
+                <a href="https://www.google.com" target="_blank">
+                    <i class='bx bxl-google'></i>
+                    <span class="links_name">Google</span>
+                </a>
+                <span class="tooltip">Google</span>
+            </li>
+            <li>
+                <a href="https://www.wikipedia.org" target="_blank">
+                    <i class='bx bxl-wikipedia'></i>
+                    <span class="links_name">Wikipedia</span>
+                </a>
+                <span class="tooltip">Wikipedia</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="profile.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Gustavo Escocard</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id='log_out'></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="home_content">
+        <div class="text">
+            <p>Responsive Sidebar.</p>
+            <p>Made with html5, css3 and javascript technologies.</p>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
